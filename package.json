@@ -1,0 +1,10 @@
+{
+  "name": "alvarosamudio.github.io",
+  "version": "0.1.0",
+  "description": "presentation page",
+  "main": "index.js",
+  "repository": "https://github.com/alvarosamudio/alvarosamudio.github.io",
+  "author": "alvarosamudio",
+  "license": "GPLv3"
+  
+}
