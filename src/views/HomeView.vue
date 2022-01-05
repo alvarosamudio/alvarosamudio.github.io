@@ -90,7 +90,7 @@
           bc1qte89nq55d65javmncg4paxymv9mww4m3ngrr3h
         </v-card-text>
         <v-layout center>
-          <v-img src="@/assets/img/btc.jpg" max-width="200px"></v-img>
+          <v-img src="@/assets/img/btc.jpg" max-width="500px"></v-img>
         </v-layout>
         <v-card-actions>
           <v-spacer></v-spacer>
@@ -105,6 +105,23 @@
     </v-dialog>
   </v-container>
 </template>
+
+<script lang="ts">
+  import { defineComponent } from 'vue';
+  import HistoryTimeLine from "@/components/HistoryTimeLine.vue";
+  export default defineComponent({
+    components: {
+      HistoryTimeLine
+    },
+    data() {
+      return {
+        dialog_email: false,
+        dialog_btc: false,
+
+      }
+    }
+  });
+</script>
 
 <style>
   .mx-auto {
