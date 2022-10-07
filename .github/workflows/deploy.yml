@@ -26,8 +26,8 @@ jobs:
     - name: Deploy
       run: |
         git clone https://${{github.actor}}:${{github.token}}@github.com/${{github.repository}} -b main
-        mv alvarosamudio.github.io/.git dist/
-        cd dist
+        mv alvarosamudio.github.io/.git public/
+        cd public
         git add .
         git commit --allow-empty -m "built from ${{github.sha}}"
         git push --force-with-lease origin main
