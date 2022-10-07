@@ -13,7 +13,7 @@
 
 
 
-<title>Mejorar la calidad de audio en deepin | G4SP3R Blog</title>
+<title>Tag: Deepin Audio | G4SP3R Blog</title>
 
 
 
@@ -124,67 +124,29 @@
     }
 </script>
             <div class="main">
-                <div class="container">
-    
-    
+                
 
     
-    <article class="post-wrap">
-        <header class="post-header">
-            <h1 class="post-title">Mejorar la calidad de audio en deepin</h1>
-            
-                <div class="post-meta">
-                    
-                        Author: <a itemprop="author" rel="author" href="/">Alvaro Samudio</a>
-                    
-
-                    
-                        <span class="post-time">
-                        Date: <a href="#">octubre 7, 2022&nbsp;&nbsp;11:51:56</a>
-                        </span>
-                    
-                    
-                </div>
-            
-        </header>
-
-        <div class="post-content">
-            <p>Una de las cosas que son notables en las distribuciones GNU&#x2F;Linux es que el audio es distinto al de Windows, y esto tiene que ver con la calidad, ecualizacion y potencia, y hoy en este tutorial, mejoraremos la calidad del audio</p>
-<p>Vamos a editar el archivo daemon.conf de PulseAudio</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo nano /etc/pulse/daemon.conf</span><br></pre></td></tr></table></figure>
-
-<p>Ajustamos 3 parámetros en principio</p>
-<p>Y como vas a ver en el ejemplo, copie las líneas por si hay que volver atrás, le ajuste los parámetros y las descámente sacando el;</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">resample-method = src-sinc-best-quality</span><br><span class="line"></span><br><span class="line">default-sample-format = s24le</span><br><span class="line"></span><br><span class="line">default-sample-rate = 96000</span><br></pre></td></tr></table></figure>
-
-<p>Una vez que cambiamos esto, le damos F2 con nano para guardar y salir, y reiniciamos PulseAudio:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo pulseaudio -k</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo pulseaudio --start</span><br></pre></td></tr></table></figure>
-
-        </div>
+<div class="container">
+    <div class="post-wrap tags">
+        <h2 class="post-title">-&nbsp;Tag&nbsp;·&nbsp;Deepin Audio-</h2>
+    </div>
+    <div class="post-wrap archive">
+    
+    
+        
 
         
-        <section class="post-tags">
-            <div>
-                <span>Tag(s):</span>
-                <span class="tag">
-                    
-                </span>
-            </div>
-            <div>
-                <a href="javascript:window.history.back();">back</a>
-                <span>· </span>
-                <a href="/">home</a>
-            </div>
-        </section>
-        <section class="post-nav">
-            
-            
-        </section>
+            <h3>2022</h3>
+        
 
-
-    </article>
+        <article class="archive-item">
+            <a class="archive-item-link" href="/2022/10/07/mejorar-la-calidad-de-audio-en-deepin/">Mejorar la calidad de audio en deepin</a>
+            <span class="archive-item-date">octubre 7, 2022</span>
+        </article>
+    
+    
+</div>
 </div>
 
             </div>
