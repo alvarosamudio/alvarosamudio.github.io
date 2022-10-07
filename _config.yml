@@ -105,4 +105,6 @@ theme: Chic
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repo: https://github.com/alvarosamudio/alvarosamudio.github.io.git
+  branch: gh-page

@@ -20,16 +20,6 @@ jobs:
         npm install
         npm install -g hexo-cli
         npm run build
-    - name: Setup Git
-      run: |
-        git config --global user.name "bot"
-        git config --global user.email "${{secrets.ACTIONS_EMAIL}}"
     - name: Deploy
       run: |
-        git clone https://${{github.actor}}:${{github.token}}@github.com/${{github.repository}} -b gh-page
-        mv alvarosamudio.github.io/.git public/
-        cd public
-        git add .
-        git commit --allow-empty -m "built from ${{github.sha}}"
-        git push --force-with-lease origin gh-page
-        
+        hexo deploy
