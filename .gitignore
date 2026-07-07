@@ -13,11 +13,9 @@
 # testing
 /coverage
 
-# next.js
-/.next/
+# sveltekit
+/.svelte-kit/
 /out/
-
-# production
 /build
 
 # misc
@@ -39,3 +37,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# next.js (stale build output)
+.next/
+
+# opencode
+.opencode/
